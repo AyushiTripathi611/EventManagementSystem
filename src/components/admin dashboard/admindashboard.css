@@ -1,0 +1,13 @@
+
+.chart-and-numbers-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .chart-and-numbers-container {
+    flex-direction: column;
+  }
+}
