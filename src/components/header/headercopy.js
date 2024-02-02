@@ -13,7 +13,8 @@ import MenuItem from '@mui/material/MenuItem';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { Link } from 'react-router-dom';
 import Divider from '@mui/material/Divider';
-// import "./headercopy.css" 
+import "./headercopy.css" 
+import Logo from '../images/eventsifyy_logo.png';
 
 function HeaderCopy() {
     const [anchorElNot, setAnchorElNot] = React.useState(null);
@@ -72,7 +73,8 @@ function HeaderCopy() {
         <AppBar position="static">
             <Container maxWidth="l">
                 <Toolbar className='d-flex justify-content-between' disableGutters>
-                    <Typography
+                    <Link to="/home" className='text-white'> <img src={Logo} alt="Evensifyy Logo" /></Link>
+                    {/* <Typography
                         variant="h6"
                         noWrap
                         component="a"
@@ -88,7 +90,7 @@ function HeaderCopy() {
                         }}
                     >
                         Event Management System
-                    </Typography>
+                    </Typography> */}
 
                     <div className='d-flex align-items-center justify-content-between'>
                         {userRole === "user" ?
